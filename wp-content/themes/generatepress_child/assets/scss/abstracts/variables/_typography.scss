@@ -1,0 +1,73 @@
+// This file controls all base font styles for our theme. All font styles should
+// be defined in _typography.scss. This allows us to at a glance determine global
+// font styles of our theme and prevents arbitrary font style assignment.
+
+// Global Font Families
+//------------------------------------------------------------------------------
+$sans-serif:      Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans-serif-alt:  Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif:           Georgia, Times, 'Times New Roman', serif;
+$monospace:       Consolas, Monaco, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+
+// Base Font Families
+//------------------------------------------------------------------------------
+$base-font-family:        $sans-serif;
+$header-font-family:      $sans-serif-alt;
+$blockquote-font-family:  $serif;
+
+// Base Font Sizes
+//------------------------------------------------------------------------------
+$base-font-size:       16px;
+$base-line-height:     1.625;
+$header-line-height:   1.25;
+$secondary-font-size:  14px;
+
+// Mobile Heading Font Sizes
+//------------------------------------------------------------------------------
+$modularscale: (
+  	base: $base-font-size,
+  	ratio: $minor-second
+);
+$site-title-mobile-font-size: floor(ms(6));
+$h1-mobile-font-size: floor(ms(5));
+$h2-mobile-font-size: floor(ms(4));
+$h3-mobile-font-size: floor(ms(3));
+$h4-mobile-font-size: floor(ms(2));
+$h5-mobile-font-size: floor(ms(1));
+$h6-mobile-font-size: floor(ms(0));
+
+// Desktop Heading Font Sizes)
+//------------------------------------------------------------------------------
+$modularscale: (
+  	base: $base-font-size,
+  	ratio: $major-second
+);
+$site-title-font-size: floor(ms(6));
+$h1-font-size: floor(ms(5));
+$h2-font-size: floor(ms(4));
+$h3-font-size: floor(ms(3));
+$h4-font-size: floor(ms(2));
+$h5-font-size: floor(ms(1));
+$h6-font-size: floor(ms(0));
+
+// Title Font Sizes
+//------------------------------------------------------------------------------
+$archive-title-size:    $h4-font-size;
+$widget-title-size:     $h5-font-size;
+
+// Menu Font Sizes
+//------------------------------------------------------------------------------
+$nav-font-size:         $base-font-size;
+$subnav-font-size:      $base-font-size - 2;
+$pagination-font-size:  $base-font-size - 2;
+
+// Form Font Sizes
+//------------------------------------------------------------------------------
+$form-font-size:        $base-font-size;
+$form-font-family:      $base-font-family;
+
+// Entry Font Sizes
+//------------------------------------------------------------------------------
+$gallery-caption-font-size: $secondary-font-size - 2;
+$wp-caption-font-size:      $secondary-font-size - 2;
+$entry-meta-font-size:		$secondary-font-size - 2;

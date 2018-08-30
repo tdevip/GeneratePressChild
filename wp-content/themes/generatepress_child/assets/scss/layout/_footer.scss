@@ -1,0 +1,122 @@
+/* Footer bar */
+.footer-bar-active .footer-bar .widget {
+	padding: 0;
+}
+
+.footer-bar .widget_nav_menu > div > ul {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-bar .textwidget p:last-child {
+	margin: 0;
+}
+
+/* Footer bar aligned right */
+.footer-bar-align-right .copyright-bar {
+	float: left;
+}
+
+.footer-bar-align-right .footer-bar {
+	float: right;
+	text-align: right;
+}
+
+/* Footer bar aligned left */
+.footer-bar-align-left .copyright-bar {
+	float: right;
+	text-align: right;
+}
+
+.footer-bar-align-left .footer-bar {
+	float: left;
+}
+
+/* Footer bar aligned center */
+.footer-bar-align-center .copyright-bar {
+	float: none;
+	text-align: center;
+}
+
+.footer-bar-align-center .footer-bar {
+	float: none;
+	text-align: center;
+	margin-bottom: $base-medium-spacing;
+}
+
+.footer-bar .widget-title {
+	display: none;
+}
+
+/* Footer bar menu */
+.footer-bar .widget_nav_menu li {
+	margin: 0 $base-medium-spacing;
+	float: left;
+	padding: 0;
+	@include respond-to($below-phone) {
+		float: none;
+		display: inline-block;
+		padding: 5px 0;
+	}
+}
+
+.footer-bar .widget_nav_menu li:first-child {
+	margin-left: 0;
+}
+
+.footer-bar .widget_nav_menu li:last-child {
+	margin-right: 0;
+}
+
+.footer-bar .widget_nav_menu li ul {
+	display: none;
+}
+
+/* Back to top icon */
+.generate-back-to-top,
+.generate-back-to-top:visited {
+	font-size: $base-font-size+2;
+	border-radius: $base-border-radius;
+	position: fixed;
+	bottom: $base-large-spacing;
+	right: $base-large-spacing;
+	line-height: $base-xlarge-spacing;
+	width: $base-xlarge-spacing;
+	text-align: center;
+	z-index: 10;
+	transition: opacity 300ms ease-in-out;
+}
+
+.generate-back-to-top .screen-reader-text {
+	left: 0;
+}
+
+@include respond-to($below-phone) {
+	.footer-bar {
+		float: none !important;
+		text-align: center !important;
+		margin-bottom: 20px;
+	}
+
+	.site-footer .footer-widgets .footer-widgets-container .inside-footer-widgets {
+		margin: 0;
+	}
+
+	.site-footer .footer-widgets .footer-widgets-container .inner-padding {
+		padding: 0;
+	}
+
+	.site-info {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.site-info {
+		text-align: center;
+	}
+
+	.copyright-bar {
+		float: none !important;
+		text-align: center !important;
+	}
+}

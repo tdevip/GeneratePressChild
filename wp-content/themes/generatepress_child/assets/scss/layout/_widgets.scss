@@ -1,0 +1,41 @@
+/* =Widgets
+----------------------------------------------- */
+
+.widget {
+	margin: 0 0 $base-large-spacing;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+/* Categories widget */
+.widget_categories .children {
+    margin-left: $base-medium-spacing;
+	padding-top: $base-vsmall-spacing;
+}
+.widget_categories .children li:last-child {
+	padding-bottom: 0;
+}
+
+.widget-area .widget {
+    padding: $base-xlarge-spacing;
+}
+.footer-widgets {
+    padding: $base-xlarge-spacing;
+}
+.site-footer .footer-widgets-container .inner-padding {
+    padding: 0px 0px 0px $base-xlarge-spacing;
+}
+.site-footer .footer-widgets-container .inside-footer-widgets {
+    margin-left: -$base-xlarge-spacing;
+}
+.site-info {
+    padding: $base-medium-spacing;
+}

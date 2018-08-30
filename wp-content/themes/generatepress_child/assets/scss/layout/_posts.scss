@@ -1,0 +1,143 @@
+/* =Content
+----------------------------------------------- */
+.sticky{}
+.post {
+	margin: 0 0 $base-large-spacing;
+}
+.posted-on .updated {
+	display: none;
+}
+.byline {
+	display: inline;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base-large-spacing 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base-medium-spacing;
+}
+
+.blog .format-status .entry-title,
+.archive .format-status .entry-title,
+.blog .format-aside .entry-header,
+.archive .format-aside .entry-header,
+.blog .format-status .entry-header,
+.archive .format-status .entry-header,
+.blog .format-status .entry-meta,
+.archive .format-status .entry-meta {
+    display: none;
+}
+
+.blog .format-aside .entry-content,
+.archive .format-aside .entry-content,
+.blog .format-status .entry-content,
+.archive .format-status .entry-content {
+	margin-top: 0;
+}
+
+.blog .format-status .entry-content p:last-child,
+.archive .format-status .entry-content p:last-child {
+	margin-bottom: 0;
+}
+
+/* Posts */
+.entry-title {
+	margin-bottom: 0;
+}
+.entry-header {
+	word-wrap: break-word;
+}
+.page-header {
+	margin-bottom: $base-large-spacing;
+}
+.page-header h1 {
+	font-size: $h4-font-size;
+}
+.page-header .avatar {
+	float: left;
+	margin-right: $base-medium-spacing;
+}
+.page-header .author-info {
+	overflow: hidden;
+}
+.page-header > *:last-child {
+	margin-bottom:0;
+}
+.entry-meta {
+	font-size: $entry-meta-font-size;
+	margin-top: $base-small-spacing;
+	line-height: $base-line-height;
+}
+footer.entry-meta {
+	margin-top: $base-large-spacing;
+}
+
+footer.entry-meta .author:before,
+footer.entry-meta .posted-on:before,
+.cat-links:before,
+.tags-links:before,
+.comments-link:before,
+.nav-previous .prev:before,
+.nav-next .next:before {
+	font-family: FontAwesome;
+  	font-weight: normal;
+ 	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	position:relative;
+	margin-right: $base-small-spacing;
+	width: 13px;
+	text-align:center;
+	speak: none;
+}
+
+footer.entry-meta .author:before {
+	content: "\f007";
+}
+footer.entry-meta .posted-on:before {
+	content: "\f073";
+}
+.cat-links:before {
+	content: "\f07b";
+}
+.tags-links:before {
+	content: "\f02c";
+}
+.comments-link:before {
+	content: "\f086";
+}
+.nav-previous .prev:before {
+	content: "\f104";
+}
+.nav-next .next:before {
+	content: "\f105";
+}
+
+.cat-links,
+.tags-links,
+.comments-link,
+footer.entry-meta .posted-on,
+footer.entry-meta .byline {
+	display: block;
+}
+
+.taxonomy-description p:last-child {
+	margin-bottom: 0;
+}
+
+@include respond-to($below-phone) {
+	.post-image-aligned-left .post-image,
+	.post-image-aligned-right .post-image {
+		float: none;
+		margin: 2em 0;
+		text-align: center;
+	}
+}

@@ -1,0 +1,93 @@
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: $sans-serif;
+	font-weight: normal;
+	text-transform: none;
+	font-size: $base-font-size;
+}
+body {
+	line-height: $base-line-height;
+}
+p {
+	margin-bottom: $base-medium-spacing;
+}
+.top-bar {
+	font-weight: normal;
+	text-transform: none;
+	font-size: $secondary-font-size;
+}
+.main-title {
+	font-weight: bold;
+	text-transform: none;
+	font-size: $site-title-font-size;
+}
+.site-description {
+	font-weight: normal;
+	text-transform: none;
+	font-size: $secondary-font-size;
+}
+.main-navigation a,
+.menu-toggle {
+	font-weight: normal;
+	text-transform: none;
+	font-size: $nav-font-size;
+}
+.main-navigation .main-nav ul ul li a {
+	font-size: $subnav-font-size;
+}
+.widget-title {
+	font-weight: normal;
+	text-transform: none;
+	font-size: $widget-title-size;
+	line-height: $base-line-height;
+}
+.sidebar .widget,
+.footer-widgets .widget {
+	font-size: $widget-title-size;
+}
+h1 {
+	font-weight: 600;
+	text-transform: none;
+	font-size: $h1-font-size;
+	margin-bottom: $base-medium-spacing;
+	line-height: 1.2em;
+}
+h2 {
+	font-weight: 400;
+	text-transform: none;
+	font-size: $h2-font-size;
+	margin-bottom: $base-medium-spacing;
+	line-height: 1.2em;
+}
+h3 {
+	font-weight: normal;
+	text-transform: none;
+	font-size: $h3-font-size;
+	margin-bottom: $base-medium-spacing;
+	line-height: 1.2em;
+}
+h4 {
+	font-weight: normal;
+	text-transform: none;
+	font-size: $h4-font-size;
+	margin-bottom: $base-medium-spacing;
+}
+.site-info {
+	font-size: $secondary-font-size;
+}

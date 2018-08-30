@@ -1,0 +1,38 @@
+@include respond-to($below-phone) {
+	.gen-sidebar-nav {
+		display: none;
+	}
+
+	.sidebar-nav-mobile:not(#sticky-placeholder) {
+		display: block;
+	}
+	/* End mobile navigation */
+
+	.both-right.separate-containers .inside-left-sidebar,
+	.both-left.separate-containers .inside-left-sidebar,
+	.both-right.separate-containers .inside-right-sidebar,
+	.both-left.separate-containers .inside-right-sidebar {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.sidebar,
+	.content-area,
+	.inside-footer-widgets > div {
+		float: none;
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
+
+	.inside-footer-widgets > div:not(:last-child) {
+		margin-bottom: $base-xlarge-spacing;
+	}
+
+	.one-container .sidebar {
+		margin-top: $base-xlarge-spacing;
+	}
+
+	.separate-containers #left-sidebar + #right-sidebar .inside-right-sidebar {
+		margin-top: 0;
+	}
+}

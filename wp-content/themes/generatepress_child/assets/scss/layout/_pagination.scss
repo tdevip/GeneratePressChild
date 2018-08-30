@@ -1,0 +1,20 @@
+.paging-navigation:before,
+.paging-navigation:after {
+	content: ".";
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+
+.paging-navigation:after {
+	clear: both;
+}
+
+.paging-navigation .nav-previous,
+.paging-navigation .nav-next {
+	display: none;
+}

@@ -1,0 +1,268 @@
+/* =Start custom CSS
+----------------------------------------------- *
+/* Full width inner elements */
+.inside-navigation:not(.grid-container):after,
+.inside-navigation:not(.grid-container):before,
+.inside-header:not(.grid-container):after,
+.inside-header:not(.grid-container):before,
+.inside-footer-widgets:not(.grid-container):after,
+.inside-footer-widgets:not(.grid-container):before {
+	content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+	clear: both;
+}
+
+/* Layout spacing */
+.one-container.both-left .inside-left-sidebar {
+	margin-right: $base-medium-spacing;
+}
+.one-container.both-left .inside-right-sidebar {
+	margin-left: $base-medium-spacing;
+}
+.one-container.both-right .inside-left-sidebar {
+	margin-right: $base-medium-spacing;
+}
+.one-container.both-right .inside-right-sidebar {
+	margin-left: $base-medium-spacing;
+}
+.site-content {
+	word-wrap: break-word;
+}
+.separate-containers .site-main > *:last-child,
+.one-container .site-main > *:last-child {
+	margin-bottom: 0;
+}
+.one-container .site-main {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.one-container .site-main {
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+.one-container .inside-right-sidebar,
+.one-container .inside-left-sidebar {
+	margin-top: 0;
+}
+.one-container .inside-article {
+	padding: 0 0 $base-large-spacing 0;
+}
+.one-container.page .inside-article {
+	padding-bottom: 0;
+}
+
+.page-content > *:last-child,
+.entry-content > *:last-child,
+.entry-summary > *:last-child {
+	margin-bottom: 0;
+}
+
+/* Widget styling */
+.sidebar .widget *:last-child,
+.footer-widgets .widget *:last-child {
+	margin-bottom: 0;
+}
+.widget {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.widget-title {
+	margin-bottom: $base-large-spacing;
+}
+.widget ul,
+.widget ol {
+	margin: 0;
+}
+.widget ul li {
+	list-style-type: none;
+	position:relative;
+	padding-bottom: $base-vsmall-spacing;
+}
+.widget ul li ul li:before {
+	opacity:.7;
+}
+.widget .search-field {
+	width: 100%;
+}
+.widget:last-child,
+.separate-containers .widget:last-child {
+	margin-bottom: 0;
+}
+
+.widget_nav_menu ul ul,
+.widget_pages ul ul {
+	margin-left: $base-small-spacing;
+	margin-top: $base-vsmall-spacing;
+}
+
+.widget ul li.menu-item-has-children,
+.widget ul li.page_item_has_children {
+	padding-bottom:0;
+}
+
+.header-widget .widget-title {
+	margin-bottom: $base-medium-spacing;
+}
+
+#wp-calendar {
+	table-layout: fixed;
+	font-size: 80%;
+}
+
+#wp-calendar #prev,
+#wp-calendar #prev + .pad {
+	border-right: 0;
+}
+
+.sidebar .grid-container {
+	max-width:100%;
+	width:100%;
+}
+
+.footer-widgets {
+	padding: $base-xlarge-spacing 0;
+}
+
+.inside-footer-widgets .inner-padding {
+	padding: 0 $base-xlarge-spacing;
+}
+
+.site-info {
+	text-align: center;
+}
+
+/* Page Header Add-on */
+.page-header-image,
+.page-header-image-single {
+	line-height: 0; /* no more weird spacing */
+}
+
+.separate-containers .page-header-image,
+.separate-containers .page-header-content {
+	margin-top: $base-large-spacing;
+}
+
+.separate-containers .inside-article > [class*="page-header-"],
+.one-container .inside-article > [class*="page-header-"] {
+	margin-bottom: $base-large-spacing;
+	margin-top: 0;
+}
+
+.inside-article .page-header-image-single.page-header-below-title {
+	margin-top: $base-large-spacing;
+}
+
+/* Full width template */
+.full-width-content .container.grid-container {
+	max-width: 100%;
+}
+
+.full-width-content.no-sidebar.separate-containers .site-main {
+	margin: 0;
+}
+
+.full-width-content.separate-containers .inside-article,
+.full-width-content.one-container .site-content {
+	padding: 0;
+}
+
+/* Remove content padding */
+.contained-content.separate-containers .inside-article,
+.contained-content.one-container .site-content {
+	padding: 0;
+}
+
+/* Spacing */
+.inside-top-bar {
+	padding: $base-small-spacing;
+}
+.inside-header {
+	padding: $base-xlarge-spacing;
+}
+.separate-containers .inside-article,
+.separate-containers .comments-area,
+.separate-containers .page-header,
+.separate-containers .paging-navigation,
+.one-container .site-content,
+.inside-page-header {
+	padding: $base-xlarge-spacing;
+}
+.one-container.right-sidebar .site-main,
+.one-container.both-right .site-main {
+	margin-right: $base-xlarge-spacing;
+}
+.one-container.left-sidebar .site-main,
+.one-container.both-left .site-main {
+	margin-left: $base-xlarge-spacing;
+}
+.one-container.both-sidebars .site-main {
+	margin: 0px $base-xlarge-spacing;
+}
+.separate-containers .widget,
+.separate-containers .site-main > *,
+.separate-containers .page-header,
+.widget-area .main-navigation {
+	margin-bottom: $base-medium-spacing;
+}
+.right-sidebar.separate-containers .site-main {
+	margin: $base-medium-spacing $base-medium-spacing $base-medium-spacing 0px;
+}
+.left-sidebar.separate-containers .site-main {
+	margin: $base-medium-spacing 0px $base-medium-spacing $base-medium-spacing;
+}
+.both-sidebars.separate-containers .site-main {
+	margin: $base-medium-spacing;
+}
+.both-right.separate-containers .site-main {
+	margin: $base-medium-spacing $base-medium-spacing $base-medium-spacing 0px;
+}
+.both-right.separate-containers .inside-left-sidebar {
+	margin-right: $base-small-spacing;
+}
+.both-right.separate-containers .inside-right-sidebar {
+	margin-left: $base-small-spacing;
+}
+.both-left.separate-containers .site-main {
+	margin: $base-medium-spacing 0px $base-medium-spacing $base-medium-spacing;
+}
+.both-left.separate-containers .inside-left-sidebar {
+	margin-right: $base-small-spacing;
+}
+.both-left.separate-containers .inside-right-sidebar {
+	margin-left: $base-small-spacing;
+}
+.separate-containers .site-main {
+	margin-top: $base-medium-spacing;
+	margin-bottom: $base-medium-spacing;
+}
+.separate-containers .page-header-image,
+.separate-containers .page-header-contained,
+.separate-containers .page-header-image-single,
+.separate-containers .page-header-content-single {
+	margin-top: $base-medium-spacing;
+}
+.separate-containers .inside-right-sidebar,
+.separate-containers .inside-left-sidebar {
+	margin-top: $base-medium-spacing;
+	margin-bottom: $base-medium-spacing;
+}
+
+@include respond-to($below-phone) {
+	.site-main {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	body:not(.no-sidebar) .site-main {
+		margin-bottom: 0 !important;
+	}
+}
+

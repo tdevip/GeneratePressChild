@@ -1,0 +1,51 @@
+/*!---------------------------------------------------------------------------------
+
+ Theme Name:   GeneratePress-Child
+ Theme URI:    http://www.droncology.com
+ Description:  Child theme for GeneratePress theme
+ Author:       Prasad Tumula
+ Author URI:   http://www.droncology.com
+ Template:     GeneratePress
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+------------------------------ ADDITIONAL CSS HERE --------------------------------*/
+
+@import
+	"vendor/modularscale",
+	"vendor/bourbon",
+	"vendor/animate",
+	"vendor/unsemantic-grid",
+	"vendor/font-awesome-minimum";
+
+@import
+	"abstracts/variables",
+	"abstracts/mixins",
+	"abstracts/functions",
+	"abstracts/placeholders";
+
+
+@import
+	"base/reset",
+	"base/global",
+	"base/typography";
+
+@import
+	"layout/comments",
+	"layout/widgets",
+	"layout/forms",
+	"layout/media",
+	"layout/misc",
+	"layout/spacing",
+	"layout/posts",
+	"layout/sidebar",
+	"layout/pagination",
+	"layout/footer",
+	"layout/top-bar",
+	"layout/header",
+	"layout/main-menu";
+
+@import
+	"pages/home",
+	"pages/contact";

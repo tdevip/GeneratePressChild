@@ -1,0 +1,26 @@
+/* SiteOrigin Page Builder */
+.so-panel.widget {
+	padding: 0;
+}
+
+/* MailChimp CSS */
+#mc_embed_signup .clear {
+	display: block;
+	height: auto;
+	visibility: visible;
+	width: auto;
+}
+
+/* Bootstrap fix */
+.container.grid-container {
+	width: auto;
+}
+
+@include respond-to($below-phone) {
+	.edd_download {
+		display: block;
+		float: none !important;
+		margin-bottom: 1.5em;
+		width: 100% !important;
+	}
+}
